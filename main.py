@@ -9,7 +9,7 @@ music_player.geometry("450x350")
 directory = askdirectory()
 os.chdir(directory)
 song_list = os.listdir()
-
+print(song_list)
 play_list = tkr.listbox(music_player, font="helvetica 12 bold", bg='yellow', selectmode=tkr.SINGLE)
 for item in song_list:
     pos =0
